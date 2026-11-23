@@ -1,0 +1,1 @@
+function openPanel(title){const d=document.querySelector('#modal');document.querySelector('#modalTitle').textContent=title;d.showModal()}document.querySelector('form').addEventListener('submit',e=>{e.preventDefault();document.querySelector('form p').textContent='Thank you. Demo only — no information has been stored.';});
