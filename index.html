@@ -1,1 +1,36 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATELIER AE — You Are the Art Dealer</title><link rel="stylesheet" href="style.css"></head><body><header><b>◯ AE &nbsp; ATELIER AE</b><nav><a href="#art">Artworks</a><a href="#artists">Artists</a><a href="#dealers">Art Dealers</a><button onclick="openPanel('Login')">Login</button></nav></header><main><section class="hero"><small>INDEPENDENT ART PLATFORM</small><h1>YOU ARE THE<br><em>ART DEALER.</em></h1><p>Discover original art. Connect buyers. Build relationships.</p><a class="btn" href="#art">EXPLORE ART ↗</a><a class="btn ghost" href="#dealers">BECOME AN ART DEALER</a><div class="foot">ART WITHOUT BOUNDARIES. <span>01 — DISCOVER</span></div></section><section id="art"><small>CURATED ARTWORKS</small><h2>Art that makes<br>a statement.</h2><div class="cards"><article>AE <small>01</small><p>Artwork One · Sample</p></article><article>FORM <small>02</small><p>Artwork Two · Sample</p></article><article>RAW <small>03</small><p>Artwork Three · Sample</p></article></div></section><section id="artists"><small>FOR ARTISTS</small><h2>Your work.<br>Your platform.</h2><p>Create an artist profile and present your portfolio. Every application is reviewed by ATELIER AE.</p><button class="btn" onclick="openPanel('Artist application')">APPLY AS AN ARTIST ↗</button></section><section id="dealers"><small>FOR ART DEALERS</small><h2>You know a buyer.<br>We have the art.</h2><p>Share personal artwork links, connect collectors and track your referrals. Applications require approval.</p><button class="btn" onclick="openPanel('Art dealer application')">BECOME AN ART DEALER ↗</button></section><section class="closing"><h2>FIND BUYERS.<br>CONNECT. EARN.</h2><button class="btn" onclick="openPanel('Member login')">ENTER THE PLATFORM ↗</button></section></main><dialog id="modal"><form method="dialog"><button class="close">×</button><small>ATELIER AE</small><h2 id="modalTitle">Application</h2><p>This is a visual prototype only. No data is sent or saved.</p><label>Name<input placeholder="Your name"></label><label>Email<input type="email" placeholder="you@example.com"></label><label>Introduction<textarea placeholder="A few words about you"></textarea></label><button class="btn">SUBMIT DEMO ↗</button></form></dialog><footer>© ATELIER AE <span>YOU ARE THE ART DEALER.</span></footer><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>ATELIER AE — You Are the Art Dealer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="ATELIER AE home">
+    <img src="assets/ae-logo.png" alt="ATELIER AE original hand-drawn logo">
+    <span>ATELIER AE</span>
+  </a>
+  <nav><a href="#art">Artworks</a><a href="#artists">Artists</a><a href="#dealers">Art Dealers</a><button onclick="openPanel('Member login')">Login</button></nav>
+</header>
+<main id="home">
+  <section class="hero">
+    <small>INDEPENDENT ART PLATFORM</small>
+    <h1>YOU ARE THE<br><em>ART DEALER.</em></h1>
+    <p>Discover original art. Connect buyers. Build relationships.</p>
+    <div><a class="btn" href="#art">EXPLORE ART ↗</a><a class="btn ghost" href="#dealers">BECOME AN ART DEALER</a></div>
+    <div class="foot"><span>ART WITHOUT BOUNDARIES.</span><span>01 — DISCOVER</span></div>
+  </section>
+  <section id="art"><small>CURATED ARTWORKS</small><h2>Art that makes<br>a statement.</h2>
+    <div class="cards"><article>AE<small>01</small><p>Artwork One · Sample</p></article><article>FORM<small>02</small><p>Artwork Two · Sample</p></article><article>RAW<small>03</small><p>Artwork Three · Sample</p></article></div>
+  </section>
+  <section id="artists"><small>FOR ARTISTS</small><h2>Your work.<br>Your platform.</h2><p>Create an artist profile and present your portfolio. Every application is reviewed and approved by ATELIER AE.</p><button class="btn" onclick="openPanel('Artist application')">APPLY AS AN ARTIST ↗</button></section>
+  <section id="dealers"><small>FOR ART DEALERS</small><h2>You know a buyer.<br>We have the art.</h2><p>Share personal artwork links, connect collectors and track your referrals. Applications require approval.</p><button class="btn" onclick="openPanel('Art dealer application')">BECOME AN ART DEALER ↗</button></section>
+  <section class="closing"><h2>FIND BUYERS.<br>CONNECT. EARN.</h2><button class="btn" onclick="openPanel('Member login')">ENTER THE PLATFORM ↗</button></section>
+</main>
+<dialog id="modal"><form method="dialog"><button class="close">×</button><small>ATELIER AE</small><h2 id="modalTitle">Application</h2><p>This is a visual prototype only. No data is sent or saved.</p><label>Name<input placeholder="Your name"></label><label>Email<input type="email" placeholder="you@example.com"></label><label>Introduction<textarea placeholder="A few words about you"></textarea></label><button class="btn">SUBMIT DEMO ↗</button></form></dialog>
+<footer>© ATELIER AE <span>YOU ARE THE ART DEALER.</span></footer>
+<script src="app.js"></script>
+</body></html>
